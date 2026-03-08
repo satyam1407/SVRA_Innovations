@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';import { Variants } from "framer-motion"
+import Link from 'next/link';
+import { Variants } from "framer-motion"
 
 const itemVariants: Variants = {
   hidden: {

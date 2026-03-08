@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 
 const Services: React.FC = () => {
@@ -14,7 +14,7 @@ const Services: React.FC = () => {
     },
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, y: 60 },
     visible: {
       opacity: 1,
