@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+// import { Variants } from "framer-motion"
 
 const AboutStats = () => {
   const containerVariants = {
@@ -18,12 +19,12 @@ const AboutStats = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as any} },
   };
 
   const statVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: 'backOut' } },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: 'backOut' as any } },
   };
 
   return (
