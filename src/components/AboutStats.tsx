@@ -37,7 +37,7 @@ const AboutStats = () => {
   //   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as any} },
   // };
 
-  const statVariants = {
+  const statVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: 'backOut' as any } },
   };
