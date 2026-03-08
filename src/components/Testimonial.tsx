@@ -39,7 +39,7 @@ const Services: React.FC = () => {
         {/* Left Image */}
         <motion.div variants={item} className="relative w-full h-[320px] md:h-[460px]">
           <Image
-            src="/Services/2.png"
+            src="/Services/8.png"
             alt="MacBook with code"
             fill
             className="object-cover rounded-xl"
