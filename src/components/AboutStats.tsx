@@ -2,8 +2,22 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
-// import { Variants } from "framer-motion"
+import Link from 'next/link';import { Variants } from "framer-motion"
+
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut"
+    }
+  }
+}
 
 const AboutStats = () => {
   const containerVariants = {
@@ -17,10 +31,10 @@ const AboutStats = () => {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as any} },
-  };
+  // const itemVariants = {
+  //   hidden: { opacity: 0, y: 30 },
+  //   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as any} },
+  // };
 
   const statVariants = {
     hidden: { opacity: 0, scale: 0.8 },
