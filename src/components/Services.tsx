@@ -82,7 +82,7 @@ const Services = () => {
             {/* Image */}
             <div className="rounded-3xl overflow-hidden">
               <Image
-                src="/Services/2.png"
+                src="/Services/service2.png"
                 alt="Custom App Development"
                 width={700}
                 height={450}

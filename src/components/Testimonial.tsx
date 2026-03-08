@@ -73,7 +73,7 @@ const Services: React.FC = () => {
           >
             <div className="relative w-12 h-12">
               <Image
-                src="/Services/2.png"
+                src="/Services/9.png"
                 alt="Author avatar"
                 fill
                 className="rounded-full object-cover"
