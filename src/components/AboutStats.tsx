@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { Easing, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Variants } from "framer-motion"
@@ -15,7 +15,7 @@ const itemVariants: Variants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.25, 0.1, 0.25, 1] as any
+      ease: [0.25, 0.1, 0.25, 1] as Easing
     }
   }
 }
@@ -39,7 +39,7 @@ const AboutStats = () => {
 
   const statVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.34, 1.56, 0.64, 1] as any } },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.34, 1.56, 0.64, 1] as Easing } },
   };
 
   return (
