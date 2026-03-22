@@ -96,7 +96,7 @@ const Footer = () => {
           transition={{ delay: 0.3, duration: 0.5 }}
           className="border-t border-gray-700 mt-12 pt-8 text-sm text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-2"
         >
-          <span>© {new Date().getFullYear()} SVRA Innovations LLC. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} SVRA Innovations LLC. All rights reserved. | Powered by SVRA</span>
           <span className="flex gap-4">
             <Link href="/privacy" className="hover:text-gray-300 transition">Privacy</Link>
             <Link href="/terms"   className="hover:text-gray-300 transition">Terms</Link>
