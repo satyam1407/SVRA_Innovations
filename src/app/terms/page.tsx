@@ -124,7 +124,7 @@ export default function Terms() {
           <ul className="list-disc pl-6 space-y-1 mb-4">
             <li>By use of our corporate name; or</li>
             <li>By use of the uniform resource locator being linked to; or</li>
-            <li>Using any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.</li>
+            <li>Using any other description of our Website being linked to that makes sense within the context and format of content on the linking party&apos;s site.</li>
           </ul>
           <p>
             No use of SVRA Innovations LLC&apos;s logo or other artwork will be allowed for linking absent a trademark license agreement.
