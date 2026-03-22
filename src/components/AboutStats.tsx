@@ -1,45 +1,30 @@
 'use client';
 
-import { Easing, motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Variants } from "framer-motion"
 
 const itemVariants: Variants = {
-  hidden: {
-    opacity: 0,
-    y: 20
-  },
+  hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.5,
-      ease: [0.25, 0.1, 0.25, 1] as const
-    }
-  }
-}
+    transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const },
+  },
+};
+
+const statVariants: Variants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.34, 1.56, 0.64, 1] as const } },
+};
 
 const AboutStats = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
+      transition: { staggerChildren: 0.2, delayChildren: 0.3 },
     },
-  };
-
-  // const itemVariants = {
-  //   hidden: { opacity: 0, y: 30 },
-  //   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as any} },
-  // };
-
-  const statVariants: Variants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.34, 1.56, 0.64, 1] as const } },
   };
 
   return (
@@ -52,34 +37,35 @@ const AboutStats = () => {
     >
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
-          {/* Left column: text and button */}
+          {/* Left column */}
           <motion.div variants={itemVariants}>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Innovating Mobile Experiences Daily
+              Your Full-Service Technology Partner
             </h2>
             <p className="text-gray-600 text-lg mb-8">
-              At SVRA Innovations LLC, we specialize in developing cutting-edge iOS
-              applications that enhance user experiences and drive engagement. Our
-              passion for technology fuels our commitment to excellence.
+              At SVRA Innovations LLC, we combine deep technical expertise with
+              business insight to deliver web applications, mobile apps, AI integrations,
+              QA engineering, HR solutions, and talent recruitment — all under one roof.
+              Our passion for innovation drives outcomes that matter.
             </p>
             <Link
               href="/about"
               className="inline-block border border-gray-900 text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-gray-900 hover:text-white transition"
             >
-              Explore
+              Learn About Us
             </Link>
 
-            {/* Unleash your Genius text */}
+            {/* Tagline */}
             <div className="text-center md:text-left my-5">
               <h3 className="text-2xl font-bold text-gray-900">
-                Unleash your Genius
+                Unleash Your Potential
               </h3>
               <p className="text-gray-600">
-                Turn your data into beautiful, powerful mobile apps
+                Technology that scales with your business — from idea to production
               </p>
             </div>
 
-            {/* Stats card – dark background as in original */}
+            {/* Stats */}
             <motion.div
               className="bg-[#1A1A1A] text-white p-6 rounded-none"
               variants={itemVariants}
@@ -87,11 +73,15 @@ const AboutStats = () => {
               <div className="flex flex-wrap gap-8 justify-center md:justify-start">
                 <motion.div variants={statVariants}>
                   <div className="text-3xl font-bold">150+</div>
-                  <div className="text-gray-300 text-sm">Proven Success</div>
+                  <div className="text-gray-300 text-sm">Projects Delivered</div>
                 </motion.div>
                 <motion.div variants={statVariants}>
-                  <div className="text-3xl font-bold">15</div>
-                  <div className="text-gray-300 text-sm">Trusted by Users</div>
+                  <div className="text-3xl font-bold">6+</div>
+                  <div className="text-gray-300 text-sm">Service Verticals</div>
+                </motion.div>
+                <motion.div variants={statVariants}>
+                  <div className="text-3xl font-bold">5★</div>
+                  <div className="text-gray-300 text-sm">Client Satisfaction</div>
                 </motion.div>
               </div>
             </motion.div>
@@ -102,7 +92,7 @@ const AboutStats = () => {
             <div className="relative max-w-md mx-auto md:mx-0">
               <Image
                 src="/aboutstats/1.png"
-                alt="Mobile app interface showing modern design"
+                alt="SVRA Innovations team delivering technology solutions"
                 width={400}
                 height={400}
                 className="rounded-lg object-cover w-full h-auto"

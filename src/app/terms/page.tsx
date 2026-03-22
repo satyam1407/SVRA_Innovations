@@ -20,10 +20,10 @@ export default function Terms() {
         </h1>
 
         <div className="space-y-6 text-gray-700">
-          <p>Welcome to SVRA Properties!</p>
+          <p>Welcome to SVRA Innovations LLC!</p>
 
           <p>
-            These terms and conditions outline the rules and regulations for the use of SVRA Properties's Website, located at{' '}
+            These terms and conditions outline the rules and regulations for the use of SVRA Innovations LLC' Website, located at{' '}
             <a
               href="https://svraproperties.tech"
               target="_blank"
@@ -35,14 +35,14 @@ export default function Terms() {
           </p>
 
           <p>
-            By accessing this website, we assume you accept these terms and conditions. Do not continue to use SVRA Properties if you do not agree to take all of the terms and conditions stated on this page.
+            By accessing this website, we assume you accept these terms and conditions. Do not continue to use SVRA Innovations LLC if you do not agree to take all of the terms and conditions stated on this page.
           </p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
             Cookies:
           </h2>
           <p>
-            The website uses cookies to help personalize your online experience. By accessing SVRA Properties, you agreed to use the required cookies.
+            The website uses cookies to help personalize your online experience. By accessing SVRA Innovations LLC, you agreed to use the required cookies.
           </p>
           <p>
             A cookie is a text file that is placed on your hard disk by a web page server. Cookies cannot be used to run programs or deliver viruses to your computer. Cookies are uniquely assigned to you and can only be read by a web server in the domain that issued the cookie to you.
@@ -55,21 +55,21 @@ export default function Terms() {
             License:
           </h2>
           <p>
-            Unless otherwise stated, SVRA Properties and/or its licensors own the intellectual property rights for all material on SVRA Properties. All intellectual property rights are reserved. You may access this from SVRA Properties for your own personal use subjected to restrictions set in these terms and conditions.
+            Unless otherwise stated, SVRA Innovations LLC and/or its licensors own the intellectual property rights for all material on SVRA Innovations LLC. All intellectual property rights are reserved. You may access this from SVRA Innovations LLC for your own personal use subjected to restrictions set in these terms and conditions.
           </p>
           <p>You must not:</p>
           <ul className="list-disc pl-6 space-y-1 mb-4">
-            <li>Copy or republish material from SVRA Properties</li>
-            <li>Sell, rent, or sub-license material from SVRA Properties</li>
-            <li>Reproduce, duplicate or copy material from SVRA Properties</li>
-            <li>Redistribute content from SVRA Properties</li>
+            <li>Copy or republish material from SVRA Innovations LLC</li>
+            <li>Sell, rent, or sub-license material from SVRA Innovations LLC</li>
+            <li>Reproduce, duplicate or copy material from SVRA Innovations LLC</li>
+            <li>Redistribute content from SVRA Innovations LLC</li>
           </ul>
           <p>This Agreement shall begin on the date hereof.</p>
           <p>
-            Parts of this website offer users an opportunity to post and exchange opinions and information in certain areas of the website. SVRA Properties does not filter, edit, publish or review Comments before their presence on the website. Comments do not reflect the views and opinions of SVRA Properties, its agents, and/or affiliates. Comments reflect the views and opinions of the person who posts their views and opinions. To the extent permitted by applicable laws, SVRA Properties shall not be liable for the Comments or any liability, damages, or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.
+            Parts of this website offer users an opportunity to post and exchange opinions and information in certain areas of the website. SVRA Innovations LLC does not filter, edit, publish or review Comments before their presence on the website. Comments do not reflect the views and opinions of SVRA Innovations LLC, its agents, and/or affiliates. Comments reflect the views and opinions of the person who posts their views and opinions. To the extent permitted by applicable laws, SVRA Innovations LLC shall not be liable for the Comments or any liability, damages, or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.
           </p>
           <p>
-            SVRA Properties reserves the right to monitor all Comments and remove any Comments that can be considered inappropriate, offensive, or causes breach of these Terms and Conditions.
+            SVRA Innovations LLC reserves the right to monitor all Comments and remove any Comments that can be considered inappropriate, offensive, or causes breach of these Terms and Conditions.
           </p>
           <p>You warrant and represent that:</p>
           <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -79,7 +79,7 @@ export default function Terms() {
             <li>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>
           </ul>
           <p>
-            You hereby grant SVRA Properties a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats, or media.
+            You hereby grant SVRA Innovations LLC a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats, or media.
           </p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
@@ -117,13 +117,13 @@ export default function Terms() {
             <li>Educational institutions and trade associations.</li>
           </ul>
           <p>
-            We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of SVRA Properties; and (d) the link is in the context of general resource information.
+            We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of SVRA Innovations LLC; and (d) the link is in the context of general resource information.
           </p>
           <p>
             These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement, or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.
           </p>
           <p>
-            If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to SVRA Properties. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.
+            If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to SVRA Innovations LLC. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.
           </p>
           <p>Approved organizations may hyperlink to our Website as follows:</p>
           <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -132,7 +132,7 @@ export default function Terms() {
             <li>Using any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.</li>
           </ul>
           <p>
-            No use of SVRA Properties's logo or other artwork will be allowed for linking absent a trademark license agreement.
+            No use of SVRA Innovations LLC' logo or other artwork will be allowed for linking absent a trademark license agreement.
           </p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">

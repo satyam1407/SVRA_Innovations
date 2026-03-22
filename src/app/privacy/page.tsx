@@ -18,7 +18,7 @@ export default function Privacy() {
 
           <div className="space-y-6 text-gray-700">
             <p>
-              Your privacy is important to us. It is SVRA Properties' policy to respect your privacy regarding any information we may collect from you across our website,{' '}
+              Your privacy is important to us. It is SVRA Innovations LLC' policy to respect your privacy regarding any information we may collect from you across our website,{' '}
               <a
                 href="https://svraproperties.tech"
                 target="_blank"
@@ -57,21 +57,21 @@ export default function Privacy() {
               Log Files
             </h2>
             <p>
-              SVRA Properties follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
+              SVRA Innovations LLC follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
               Cookies and Web Beacons
             </h2>
             <p>
-              Like any other website, SVRA Properties uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+              Like any other website, SVRA Innovations LLC uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
               Third Party Privacy Policies
             </h2>
             <p>
-              SVRA Properties's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+              SVRA Innovations LLC' Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
@@ -114,7 +114,7 @@ export default function Privacy() {
               Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
             </p>
             <p>
-              SVRA Properties does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
+              SVRA Innovations LLC does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">

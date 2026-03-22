@@ -10,168 +10,119 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
+    { name: 'Home',     href: '/' },
+    { name: 'About',    href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Privacy', href: '/privacy' },
-    { name: 'Terms & conditions', href: '/terms' },
+    { name: 'Contact',  href: '/contact' },
   ];
 
-  // Custom CSS variables from the original header
   const headerStyle = {
     '--nav-link-font-weight': '400',
     '--nav-link-text-color': 'rgb(86, 88, 94)',
     '--nav-link-text-color-hover': 'rgb(13, 20, 26)',
     '--header-height-mobile': '66px',
     '--width': '1240px',
-    '--padding-top': '21px',
     '--padding': '21px 16px 21px 16px',
-    '--padding-right': '16px',
-    '--padding-bottom': '21px',
-    '--padding-left': '16px',
-    '--m-padding-top': '24px',
     '--m-padding': '24px 16px 24px 16px',
-    '--m-padding-right': '16px',
-    '--m-padding-bottom': '24px',
-    '--m-padding-left': '16px',
     '--logo-width': '148px',
-    '--cartIconSize': '24px',
     '--link-spacing': '32px',
     '--m-logo-width': '55px',
-    '--m-link-spacing': '20px',
-    '--element-spacing': '21px',
-    '--contrastBackgroundColor': 'rgb(224, 224, 224)',
     '--background-color': '#ffffff',
   } as React.CSSProperties;
 
   return (
     <motion.header
-      className="block-header w-full bg-white sticky top-0 z-50"
+      className="block-header w-full bg-white sticky top-0 z-50 shadow-sm"
       style={headerStyle}
-      data-v-efc1d71f=""
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
     >
-      {/* Background div (solid white) */}
-      <div className="background absolute inset-0 bg-white" style={{ backgroundColor: 'var(--background-color)' }} data-v-efc1d71f=""></div>
+      <div className="background absolute inset-0 bg-white" />
 
-      {/* Desktop layout */}
+      {/* Desktop */}
       <div
-        className="block-header-layout-desktop hidden md:flex items-center justify-between relative"
-        style={{
-          padding: 'var(--padding)',
-          maxWidth: 'var(--width)',
-          margin: '0 auto',
-        }}
-        data-v-a07a4ffe=""
+        className="hidden md:flex items-center justify-between relative"
+        style={{ padding: 'var(--padding)', maxWidth: 'var(--width)', margin: '0 auto' }}
       >
-        {/* Logo */}
-        <Link href="/" className="block-header-logo block-header__logo text-black font-semibold" data-v-4ae1c879="">
+        <Link href="/" className="text-black font-semibold text-lg">
           SVRA Innovations
         </Link>
 
-        {/* Navigation links */}
-        <nav className="block-header__nav" data-v-efc1d71f="">
-          <ul className="block-header__nav-links flex items-center gap-[var(--link-spacing)]" data-qa="builder-siteheader-emptyspace">
+        <nav>
+          <ul className="flex items-center gap-[var(--link-spacing)]">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
-                <li key={item.name} className="block-header-item" data-v-6773ab13="">
-                  <div
-                    className={`item-content-wrapper block-header-item__item ${
-                      isActive ? 'item-content-wrapper--active' : ''
-                    }`}
-                    data-qa={`navigation-item-${item.name.toLowerCase()}`}
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className={`text-sm transition-colors ${isActive ? 'border-b-2 border-gray-900 text-gray-900 font-medium' : ''}`}
+                    style={{ color: isActive ? 'rgb(13,20,26)' : 'var(--nav-link-text-color)' }}
+                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--nav-link-text-color-hover)')}
+                    onMouseLeave={e => (e.currentTarget.style.color = isActive ? 'rgb(13,20,26)' : 'var(--nav-link-text-color)')}
                   >
-                    <Link
-                      href={item.href}
-                      className={`item-content ${
-                        isActive ? 'border-b-2 border-gray-900' : ''
-                      }`}
-                      style={{
-                        color: 'var(--nav-link-text-color)',
-                        fontWeight: 'var(--nav-link-font-weight)',
-                      }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--nav-link-text-color-hover)')}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--nav-link-text-color)')}
-                    >
-                      {item.name}
-                    </Link>
-                  </div>
+                    {item.name}
+                  </Link>
                 </li>
               );
             })}
           </ul>
         </nav>
 
-        {/* Right side (empty in original) */}
-        <div className="block-header-layout-desktop__right-side"></div>
+        <Link
+          href="/contact"
+          className="bg-black text-white text-sm px-5 py-2.5 rounded-full font-medium hover:bg-gray-800 transition"
+        >
+          Get a Quote
+        </Link>
       </div>
 
-      {/* Mobile layout */}
-      <div
-        className="block-header-layout-mobile md:hidden relative"
-        style={{
-          padding: 'var(--m-padding)',
-        }}
-        data-v-a07a4ffe=""
-      >
+      {/* Mobile */}
+      <div className="md:hidden relative" style={{ padding: 'var(--m-padding)' }}>
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="block-header-logo block-header__logo" data-v-4ae1c879="">
-            <span className="text-black font-semibold">SVRA Innovations</span>
-          </Link>
-
-          {/* Hamburger button */}
+          <Link href="/" className="text-black font-semibold">SVRA Innovations</Link>
           <button
             type="button"
-            className="burger block-header__hamburger-menu flex flex-col justify-center items-center w-8 h-8"
+            className="flex flex-col justify-center items-center w-8 h-8"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             title="Menu"
-            style={{ '--165ebbac': 'var(--nav-link-text-color)' } as React.CSSProperties}
-            data-qa="builder-siteheader-btn-hamburger"
           >
-            <span className={`burger__bun w-6 h-0.5 bg-black mb-1.5 transition-transform ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-            <span className={`burger__meat w-6 h-0.5 bg-black mb-1.5 transition-opacity ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-            <span className={`burger__bun w-6 h-0.5 bg-black transition-transform ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+            <span className={`w-6 h-0.5 bg-black mb-1.5 transition-transform ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`w-6 h-0.5 bg-black mb-1.5 transition-opacity ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
+            <span className={`w-6 h-0.5 bg-black transition-transform ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </button>
         </div>
 
-        {/* Mobile dropdown menu */}
         {isMobileMenuOpen && (
-          <div
-            className="block-header-layout-mobile__dropdown absolute top-full left-0 w-full bg-white shadow-lg"
-            style={{ zIndex: 40 }}
-          >
-            <nav className="block-header__nav" data-v-efc1d71f="">
-              <ul className="block-header__nav-links flex flex-col py-2" data-qa="builder-siteheader-emptyspace">
+          <div className="absolute top-full left-0 w-full bg-white shadow-lg z-40">
+            <nav>
+              <ul className="flex flex-col py-2">
                 {navItems.map((item) => {
                   const isActive = pathname === item.href;
                   return (
-                    <li key={item.name} className="block-header-item" data-v-6773ab13="">
-                      <div
-                        className={`item-content-wrapper block-header-item__item px-4 py-2 ${
-                          isActive ? 'bg-gray-100 border-l-4 border-gray-900' : ''
+                    <li key={item.name}>
+                      <Link
+                        href={item.href}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className={`block px-4 py-3 text-sm transition-colors ${
+                          isActive ? 'bg-gray-100 border-l-4 border-gray-900 font-medium text-gray-900' : 'text-gray-600'
                         }`}
-                        data-qa={`navigation-item-${item.name.toLowerCase()}`}
                       >
-                        <Link
-                          href={item.href}
-                          className="item-content block w-full"
-                          style={{
-                            color: 'var(--nav-link-text-color)',
-                            fontWeight: 'var(--nav-link-font-weight)',
-                          }}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {item.name}
-                        </Link>
-                      </div>
+                        {item.name}
+                      </Link>
                     </li>
                   );
                 })}
+                <li className="px-4 py-3">
+                  <Link
+                    href="/contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="inline-block bg-black text-white text-sm px-5 py-2.5 rounded-full font-medium"
+                  >
+                    Get a Quote
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>

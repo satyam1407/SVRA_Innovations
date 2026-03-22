@@ -14,19 +14,21 @@ const ContactInfo = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          {/* Left column: contact details */}
+          {/* Left column */}
           <div>
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Contact Us
             </h3>
             <p className="text-gray-600 text-lg mb-8">
-              Reach out to us for inquiries about our iOS applications and mobile app development services.
+              Whether you need a new web or mobile application, AI integration,
+              quality assurance, HR management, or expert recruitment — our team
+              is ready to help. Reach out and let&apos;s build something great together.
             </p>
 
             <div className="space-y-2">
               <h6 className="font-semibold text-gray-900">Location</h6>
               <p className="text-gray-600">30 N Gould St Ste R</p>
-              <p className="text-gray-600">Sheridan, WY 82801</p>
+              <p className="text-gray-600">Sheridan, WY 82801, USA</p>
             </div>
 
             <div className="mt-6 space-y-1">
@@ -44,11 +46,11 @@ const ContactInfo = () => {
             </div>
           </div>
 
-          {/* Right column: map */}
+          {/* Right column */}
           <div className="h-80 md:h-auto">
             <Image
               src="/Services/9.png"
-              alt="Hand holding smartphone with app interface"
+              alt="SVRA Innovations team at work"
               width={562}
               height={480}
               className="rounded-lg object-cover w-full h-auto"

@@ -22,28 +22,32 @@ const Hero = () => {
       </video>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/55" />
 
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white">
-        <h1 className="max-w-4xl text-4xl font-semibold  leading-tight md:text-5xl lg:text-6xl">
-          Innovative iOS App Development Solutions
+        <p className="text-sm uppercase tracking-widest text-white/70 mb-4 font-medium">
+          Technology · Talent · Innovation
+        </p>
+        <h1 className="max-w-4xl text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
+          Transforming Businesses with End-to-End Technology Solutions
         </h1>
-        <p className="mt-6 max-w-2xl text-lg md:text-xl">
-          Transforming ideas into exceptional mobile applications for your business needs.
+        <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/90">
+          From web &amp; mobile apps to AI, QA, HR, and recruitment — SVRA Innovations
+          delivers the expertise your business needs to scale.
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6">
           <Link
             href="/contact"
             className="rounded-full bg-white px-8 py-3 font-semibold text-black transition hover:bg-gray-200"
           >
-            Get Started
+            Start a Project
           </Link>
           <Link
             href="/services"
             className="rounded-full border border-white px-8 py-3 font-semibold text-white transition hover:bg-white/10"
           >
-            Learn
+            Explore Services
           </Link>
         </div>
       </div>
