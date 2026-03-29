@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import axios from 'axios';
 import { CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
@@ -9,26 +10,26 @@ import { CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 const API_URL = 'https://svra-tms-native-latest.onrender.com/api/public/enquiry';
 const ENTITY_CODE = 'INNOVATIONS';
 /** Max 3 submissions per 60 minutes (stored in localStorage) */
-const RATE_LIMIT_MAX  = 3;
-const RATE_LIMIT_MS   = 60 * 60 * 1000; // 1 hour
-const LS_KEY          = 'svra_enquiry_ts';
+const RATE_LIMIT_MAX = 3;
+const RATE_LIMIT_MS = 60 * 60 * 1000; // 1 hour
+const LS_KEY = 'svra_enquiry_ts';
 
 const COUNTRY_CODES = [
-  { code: '+1',   label: 'US/CA (+1)' },
-  { code: '+44',  label: 'UK (+44)' },
-  { code: '+91',  label: 'IN (+91)' },
-  { code: '+61',  label: 'AU (+61)' },
+  { code: '+1', label: 'US/CA (+1)' },
+  { code: '+44', label: 'UK (+44)' },
+  { code: '+91', label: 'IN (+91)' },
+  { code: '+61', label: 'AU (+61)' },
   { code: '+971', label: 'UAE (+971)' },
-  { code: '+65',  label: 'SG (+65)' },
-  { code: '+46',  label: 'SE (+46)' },
-  { code: '+49',  label: 'DE (+49)' },
-  { code: '+33',  label: 'FR (+33)' },
-  { code: '+81',  label: 'JP (+81)' },
-  { code: '+86',  label: 'CN (+86)' },
-  { code: '+55',  label: 'BR (+55)' },
-  { code: '+27',  label: 'ZA (+27)' },
+  { code: '+65', label: 'SG (+65)' },
+  { code: '+46', label: 'SE (+46)' },
+  { code: '+49', label: 'DE (+49)' },
+  { code: '+33', label: 'FR (+33)' },
+  { code: '+81', label: 'JP (+81)' },
+  { code: '+86', label: 'CN (+86)' },
+  { code: '+55', label: 'BR (+55)' },
+  { code: '+27', label: 'ZA (+27)' },
   { code: '+234', label: 'NG (+234)' },
-  { code: '+60',  label: 'MY (+60)' },
+  { code: '+60', label: 'MY (+60)' },
 ];
 
 // ── Rate-limit helpers (localStorage) ─────────────────────────────────────────
@@ -74,9 +75,9 @@ const ContactForm = () => {
     _hp: '', // honeypot — bots fill this, humans don't
   });
 
-  const [status, setStatus]       = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [result, setResult]       = useState<SubmitResult | null>(null);
-  const [errorMsg, setErrorMsg]   = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [result, setResult] = useState<SubmitResult | null>(null);
+  const [errorMsg, setErrorMsg] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -103,12 +104,12 @@ const ContactForm = () => {
 
     try {
       const payload = {
-        name:        formData.name.trim(),
-        email:       formData.email.trim(),
-        phone:       formData.phone ? `${formData.countryCode}${formData.phone.trim()}` : undefined,
-        subject:     formData.subject.trim() || `Enquiry from ${formData.name.trim()}`,
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        phone: formData.phone ? `${formData.countryCode}${formData.phone.trim()}` : undefined,
+        subject: formData.subject.trim() || `Enquiry from ${formData.name.trim()}`,
         description: formData.description.trim(),
-        entityCode:  ENTITY_CODE,
+        entityCode: ENTITY_CODE,
       };
 
       const res = await axios.post(API_URL, payload, {
@@ -168,8 +169,17 @@ const ContactForm = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
-              className="bg-white/95 backdrop-blur-md p-8 md:p-10 rounded-3xl shadow-xl text-gray-900 text-left"
+              className="relative bg-white/95 backdrop-blur-md p-8 md:p-10 rounded-3xl shadow-xl text-gray-900 text-left"
             >
+              {/* ✅ Close button */}
+              <button
+                onClick={() => { setStatus('idle'); setResult(null); }}
+                className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 transition"
+                aria-label="Close"
+              >
+                <X size={18} className="text-gray-500" />
+              </button>
+
               <div className="flex items-start gap-4 mb-6">
                 <CheckCircle className="text-green-600 shrink-0 mt-0.5" size={32} />
                 <div>
