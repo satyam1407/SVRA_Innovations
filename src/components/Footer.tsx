@@ -57,7 +57,7 @@ const Footer = () => {
             <address className="not-italic space-y-2 text-sm text-gray-400">
               <p>1510 Sycamore St</p>
               <p>Wilmington, DE, USA</p>
-              <p className="pt-1">+1-(302) 688-0186</p>
+              <p className="pt-1">+1 (302) 688-0186</p>
               <p className="pt-1">
                 <a href="mailto:info@svrainnovations.com" className="underline hover:text-white transition">
                   info@svrainnovations.com

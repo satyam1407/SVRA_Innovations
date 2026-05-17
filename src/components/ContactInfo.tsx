@@ -32,7 +32,7 @@ const ContactInfo = () => {
             </div>
 
             <div className="mt-6 space-y-1">
-              <p className="text-gray-600">+1-(302) 688-0186</p>
+              <p className="text-gray-600">+1 (302) 688-0186</p>
               <p className="text-gray-600">
                 <a
                   href="mailto:info@svrainnovations.com"
