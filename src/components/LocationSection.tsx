@@ -20,21 +20,19 @@ const LocationSection = () => {
               Our Location
             </h3>
             <p className="text-gray-600 text-lg mb-8">
-              SVRA Innovations LLC is headquartered in Sheridan, Wyoming, USA — serving
+              SVRA Innovations LLC is headquartered in Wilmington, Delaware, USA — serving
               clients across North America, Europe, and Asia with our distributed team of
               specialists in technology, HR, and quality assurance.
             </p>
 
             <div className="space-y-2">
               <h6 className="font-semibold text-gray-900">Address</h6>
-              <p className="text-gray-600">30 N Gould St</p>
-              <p className="text-gray-600">Sheridan, Wyoming 82801, USA</p>
+              <p className="text-gray-600">1510 Sycamore St</p>
+              <p className="text-gray-600">Wilmington, DE, USA</p>
             </div>
 
             <div className="mt-6 space-y-1">
-              <p className="text-gray-600">+1-646-583-0743</p>
-              <p className="text-gray-600">+46 766923482</p>
-              <p className="text-gray-600">+1 (661) 247-8780</p>
+              <p className="text-gray-600">+1-(302) 688-0186</p>
               <p className="text-gray-600">
                 <a
                   href="mailto:info@svrainnovations.com"

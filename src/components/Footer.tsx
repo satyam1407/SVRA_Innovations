@@ -55,11 +55,9 @@ const Footer = () => {
           <div>
             <h5 className="text-lg font-bold mb-3">Contact</h5>
             <address className="not-italic space-y-2 text-sm text-gray-400">
-              <p>30 N Gould St Ste R</p>
-              <p>Sheridan, WY 82801, USA</p>
-              <p className="pt-1">+1-646-583-0743</p>
-              <p>+46 766923482</p>
-              <p>+1 (661) 247-8780</p>
+              <p>1510 Sycamore St</p>
+              <p>Wilmington, DE, USA</p>
+              <p className="pt-1">+1-(302) 688-0186</p>
               <p className="pt-1">
                 <a href="mailto:info@svrainnovations.com" className="underline hover:text-white transition">
                   info@svrainnovations.com
