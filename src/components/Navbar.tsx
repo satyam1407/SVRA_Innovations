@@ -46,7 +46,7 @@ const Navbar = () => {
         style={{ padding: 'var(--padding)', maxWidth: 'var(--width)', margin: '0 auto' }}
       >
         <Link href="/" className="text-black font-semibold text-lg">
-          SVRA Innovations
+          SVRA Innovations LLC
         </Link>
 
         <nav>
@@ -81,7 +81,7 @@ const Navbar = () => {
       {/* Mobile */}
       <div className="md:hidden relative" style={{ padding: 'var(--m-padding)' }}>
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-black font-semibold">SVRA Innovations</Link>
+          <Link href="/" className="text-black font-semibold">SVRA Innovations LLC</Link>
           <button
             type="button"
             className="flex flex-col justify-center items-center w-8 h-8"

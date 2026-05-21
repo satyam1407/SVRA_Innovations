@@ -33,7 +33,7 @@ const Hero = () => {
           Transforming Businesses with End-to-End Technology Solutions
         </h1>
         <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/90">
-          From web &amp; mobile apps to AI, QA, HR, and recruitment — SVRA Innovations
+          From web &amp; mobile apps to AI, QA, HR, and recruitment — SVRA Innovations LLC
           delivers the expertise your business needs to scale.
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6">

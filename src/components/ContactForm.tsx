@@ -155,7 +155,7 @@ const ContactForm = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-          Get in Touch with<br />SVRA Innovations
+          Get in Touch with<br />SVRA Innovations LLC
         </h1>
         <p className="text-lg mt-4 mb-12 text-white/90">
           Tell us about your project — we&apos;ll get back to you within one business day.

@@ -72,7 +72,7 @@ const ServicesAppsShowcase = () => {
           <div>
             <h3 className="text-2xl font-bold mb-3">HR &amp; Recruitment Services</h3>
             <p className="text-gray-300 leading-relaxed">
-              Beyond technology, SVRA Innovations provides end-to-end HR management and
+              Beyond technology, SVRA Innovations LLC provides end-to-end HR management and
               specialist recruitment — sourcing top engineering, product, and business talent
               to help your company scale with the right people.
             </p>

@@ -16,7 +16,7 @@ const Footer = () => {
         >
           {/* Brand column */}
           <div>
-            <h5 className="text-lg font-bold mb-3">SVRA Innovations</h5>
+            <h5 className="text-lg font-bold mb-3">SVRA Innovations LLC</h5>
             <p className="text-sm text-gray-400 mb-4">
               End-to-end technology solutions — web, mobile, AI, QA, HR, and recruitment — for businesses that want to grow.
             </p>

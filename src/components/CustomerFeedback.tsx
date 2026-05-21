@@ -8,7 +8,7 @@ const CustomerFeedback = () => {
     {
       id: 1,
       quote:
-        "SVRA Innovations developed an app that transformed my business operations completely. Highly recommend their services!",
+        "SVRA Innovations LLC developed an app that transformed my business operations completely. Highly recommend their services!",
       name: 'John Doe',
       location: 'Sheridan',
       stars: 5,
@@ -18,7 +18,7 @@ const CustomerFeedback = () => {
     {
       id: 2,
       quote:
-        'The iOS applications created by SVRA Innovations have significantly improved our user engagement and overall satisfaction. Their team is professional and responsive to our needs.',
+        'The iOS applications created by SVRA Innovations LLC have significantly improved our user engagement and overall satisfaction. Their team is professional and responsive to our needs.',
       name: 'Jane Smith',
       location: 'Wyoming',
       stars: 5,

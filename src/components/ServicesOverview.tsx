@@ -33,7 +33,7 @@ const ServicesOverview = () => {
           </h1>
           <p className="text-gray-600 text-lg">
             A comprehensive portfolio spanning technology, talent, and quality — all
-            delivered with SVRA Innovations&apos; commitment to excellence.
+            delivered with SVRA Innovations LLC&apos; commitment to excellence.
           </p>
         </motion.div>
 
