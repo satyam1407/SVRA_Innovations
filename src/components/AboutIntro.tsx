@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const AboutIntro = () => {
   return (
-    <section className="bg-white py-16 md:py-20">
+    <section className="bg-white py-16 md:py-20 item-center">
       <div className="container mx-auto px-4">
         <motion.div
           className="grid md:grid-cols-2 gap-12 items-center"

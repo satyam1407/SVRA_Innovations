@@ -62,8 +62,7 @@ const Services: React.FC = () => {
             variants={item}
             className="text-lg md:text-xl leading-relaxed text-gray-200"
           >
-            SVRA Innovations LLC transformed my app idea into a stunning
-            iOS application. Highly recommend their services!
+            SVRA has been really easy to use. I can give people access to my place without worrying about keys, and it only takes a few seconds. It’s simple, convenient, and just works
           </motion.p>
 
           {/* Author */}
